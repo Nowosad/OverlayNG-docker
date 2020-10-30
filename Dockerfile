@@ -97,9 +97,10 @@ RUN wget https://geos.osgeo.org/snapshots/geos-20201029.tar.bz2 \
 
 # GDAL:
 
-ARG gdal_version=3.1.0
+ARG gdal_version=3.2.0
+ARG gdal_version_name=3.2.0rc1
 ENV GDAL_VERSION=$gdal_version
-ENV GDAL_VERSION_NAME=$gdal_version
+ENV GDAL_VERSION_NAME=$gdal_version_name
 
 RUN wget http://download.osgeo.org/gdal/${GDAL_VERSION}/gdal-${GDAL_VERSION_NAME}.tar.gz \
   && tar -xf gdal-${GDAL_VERSION_NAME}.tar.gz \
