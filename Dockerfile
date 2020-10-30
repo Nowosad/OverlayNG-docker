@@ -71,7 +71,6 @@ RUN cd /opt/share/proj \
 
 
 # GEOS:
-
 #ARG geos_version=3.8.0
 #ENV GEOS_VERSION=$geos_version
 #
